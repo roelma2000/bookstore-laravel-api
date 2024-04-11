@@ -31,3 +31,4 @@ Route::delete('users/{id}', [UserController::class, 'deleteUserId']);
 // Profiles
 Route::get('profiles', [ProfilesController::class, 'getAllProfiles']);
 Route::post('profiles', [ProfilesController::class, 'createProfile']);
+
