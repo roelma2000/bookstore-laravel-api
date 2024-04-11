@@ -44,4 +44,15 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+    const ADMIN_ROLE = 'store_admin'; // secure admin identifier
+/**
+     * Check if the user is an admin.
+     *
+     * @return bool
+     */
+    public function isAdmin()
+    {
+        return $this->role === self::ADMIN_ROLE;
+    }
+
 }
